@@ -18,3 +18,15 @@ let arr5 = [1, 2, 4];
 let tuple1 = ["Bhawna", 22];
 console.info(tuple1);
 let tuple2 = [22, "Bhawna"];
+// enums
+var UserRoles;
+(function (UserRoles) {
+    UserRoles["ADMIN"] = "admin";
+    UserRoles["GUEST"] = "guest";
+    UserRoles["USER"] = "user";
+})(UserRoles || (UserRoles = {}));
+var StatusCode;
+(function (StatusCode) {
+    StatusCode["BAD_REQUEST"] = "400 Bad Request";
+    StatusCode["NOT_FOUND"] = "404 Not Found";
+})(StatusCode || (StatusCode = {}));

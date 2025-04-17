@@ -25,3 +25,15 @@ console.info(tuple1);
 let tuple2: [number, string] = [22, "Bhawna"];
 
 
+// enums
+enum UserRoles{
+    ADMIN = "admin",
+    GUEST = "guest",
+    USER = "user"
+}
+
+enum StatusCode{
+    BAD_REQUEST = "400 Bad Request",
+    NOT_FOUND = "404 Not Found"
+}
+
