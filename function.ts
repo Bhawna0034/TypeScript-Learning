@@ -30,4 +30,3 @@ function greetUser(name: string = "Guest"):string{
     return `Hello ${name}`;
 }
 console.info(greetUser());
-
