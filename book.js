@@ -47,3 +47,17 @@ const result3 = concatName({ first: "Bhawna", last: "Sharma" });
 const result4 = concatName({ first: "Hemant" });
 console.info(result3);
 console.info(result4);
+;
+function newUser(user) {
+    console.info(`FullName: ${user.fullName}, Age: ${user.age}, Designation: ${user.designation}`);
+}
+newUser({ fullName: "Bhawna Sharma", age: 22, designation: "Frontend Developer" });
+const circle = {
+    radius: 5,
+    color: `red`,
+    area() {
+        return Math.PI * this.radius ** 2;
+    }
+};
+console.info(circle.color);
+console.info(circle.area());

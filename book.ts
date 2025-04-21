@@ -67,6 +67,46 @@ const result4 = concatName({first: "Hemant"});
 console.info(result3);
 console.info(result4);
 
+// Interface
+interface User{
+    fullName: string,
+    age: number,
+    designation: string
+};
+
+function newUser(user: User) {
+    console.info(`FullName: ${user.fullName}, Age: ${user.age}, Designation: ${user.designation}`);
+}
+newUser({fullName: "Bhawna Sharma", age: 22, designation: "Frontend Developer"});
+
+// Extending Interface
+// interface Admin extends User{
+//     admin: boolean;
+// }
+
+// function newAdmin(user: Admin){
+   
+// }
+
+interface Shape{
+    color: string;
+    area(): number;
+}
+
+interface Circle extends Shape{
+    radius: number
+}
+
+const circle: Circle = {
+   radius: 5,
+   color: `red`,
+   area(){
+    return Math.PI * this.radius ** 2;
+   }
+}
+
+console.info(circle.color);
+console.info(circle.area());
 
 
 
