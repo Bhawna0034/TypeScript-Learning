@@ -1,5 +1,6 @@
 "use strict";
 // const acceptObj = (obj: {foo: string, boo: number, baz: boolean}) => {}
+Object.defineProperty(exports, "__esModule", { value: true });
 const logAlbum = (title, trackCount, isReleased) => { console.log(title, trackCount, isReleased); };
 // logAlbum("Harry Potter", 15, true);
 // logAlbum("Harry Potter", false, 15); error
@@ -61,3 +62,11 @@ const circle = {
 };
 console.info(circle.color);
 console.info(circle.area());
+const housePet = {
+    name: "Sia",
+    type: "cat"
+};
+const getAnimalDescription = (animal) => {
+    console.info(`${animal.name} ${animal.type}`);
+};
+getAnimalDescription(housePet);

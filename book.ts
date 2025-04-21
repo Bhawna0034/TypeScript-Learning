@@ -1,5 +1,7 @@
 // const acceptObj = (obj: {foo: string, boo: number, baz: boolean}) => {}
 
+import { Animal } from "./animal.types";
+
 
 const logAlbum = (
     title: string,
@@ -107,6 +109,17 @@ const circle: Circle = {
 
 console.info(circle.color);
 console.info(circle.area());
+
+const housePet: Animal = {
+    name: "Sia",
+    type: "cat"
+}
+
+const getAnimalDescription = (animal: Animal) => {
+   console.info(`${animal.name} ${animal.type}`);
+}
+
+getAnimalDescription(housePet);
 
 
 
